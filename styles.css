@@ -1,0 +1,178 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+
+body{
+    background: linear-gradient(rgb(181, 54, 240), rgb(122, 8, 126));
+    background-size: cover;
+    color: white;
+    font-weight: normal;
+    font-size: 20px ; 
+}
+
+.container{
+    margin:0 200px ;
+}
+
+header,main,nav{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+nav{
+    border-bottom: 1px solid rgba(207, 207, 207, 0.555);
+}
+
+nav a{
+    margin-top: 100px;
+    text-decoration: none; 
+    color: white;
+}
+
+nav button{
+    border: 1px solid white;
+    padding: 8px 20px;
+    background: transparent;
+    margin-top: 45px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+nav div img{
+    margin-top: 15px;
+    margin-bottom: 15px;
+    margin-right: 471px;
+   
+}
+
+header {
+    margin-top: 40px;
+    margin-left: 70px;  
+    justify-content: space-between;
+}
+
+header h1{
+    margin-bottom: 20px;
+    font-weight: normal;
+    font-size: 60px;
+    font-family: '';
+    text-shadow: 0 0 3px #080808;
+
+}
+
+header p{
+    margin-bottom: 5px;
+    font-size: 21px;
+    margin-top: 10px;
+}
+
+header img{
+    margin-left: px;
+    margin: auto;
+    padding: auto;
+    min-width: 300px;
+    
+}
+
+header button{
+    border: none;
+    border-radius: 3px;
+    padding: 10px 20px;
+    margin-top: 12px;
+    margin-bottom: 20px;
+    color: #FC5E55 ;
+    box-shadow: 0 0 3px #3b3b3b;
+}
+
+main{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    text-align: center;
+    margin-top: 80px; 
+    font-size: 17px;
+}
+
+main div{
+    border: 1px solid white;
+    width:290px;
+    height: 250px;
+    border: 1px solid black;
+    margin-bottom: 20px;
+    
+
+}
+
+.book{
+    background-image: url(image-background-card1.jpg);
+    background-size: cover;
+    background-position: center;
+
+}
+
+.service{
+    background-image: url(image-background-card2.jpg);
+    background-size: cover;
+    background-position: center;
+
+}
+
+.call{
+    background-image: url(image-background-card3.jpg);
+    background-size: cover;
+    background-position: center;
+
+}
+  
+.image{
+    background-image: url(image-lion-background.png);
+    background-repeat: no-repeat;
+}
+
+.testimonials{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 50px;    
+    line-height: 30px;
+}
+
+.testimonials div{
+    border: 1px solid white;
+    width: 360px;
+    padding: 40px 45px;
+    margin-bottom: 40px; 
+}
+
+@media (max-width: 1199.98px){
+    
+    header,main,.testimonials{
+        display: flex;
+        flex-flow:row wrap;
+    }
+}
+
+@media (max-width: 991.98px){
+    .container{
+        margin: 0;
+    }
+
+    header,main,.testimonials{
+        display: flex;
+        flex-flow:column wrap;
+    }
+}
+
+@media (max-width: 767.98px){
+    .container{
+        margin: 0;
+    }
+    
+    header,main,.testimonials{
+        display: flex;
+        flex-flow:column wrap;
+    }
+}
